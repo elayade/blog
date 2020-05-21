@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div id="main" class="m-scene">
+      <section class="content">
+        <div class="content-container">
+          <h1><a class="logo" href="index.html">BLOG</a></h1>
+          <h3>Welcome</h3>
+          <form>
+            <input type="text" name="username" placeholder="Username" />
+            <input type="password" name="password" placeholder="Password" />
+            <div>
+              <span class="pass">Forget Your Password?</span>
+            </div>
+            <input class="btn" type="submit" value="Sign In" />
+          </form>
+          <span
+            >You don't Have An account ?
+            <span class="li">Sign Up With</span></span
+          >
+          <ul class="social-media">
+            <li>
+              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="img-container"></section>
+    </div>
+
+    <script>
+      const background = document.querySelector(".img-container");
+      const content = document.querySelector(".content-container");
+
+      window.addEventListener("load", () => {
+        background.classList.add("active");
+        content.classList.add("active");
+      });
+    </script>
+  </body>
+</html>
